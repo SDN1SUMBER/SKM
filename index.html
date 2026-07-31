@@ -8,40 +8,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {{
+        :root {
             --primary-color: #003366;
             --secondary-color: #4682B4;
-        }}
-        body {{
+        }
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
-        }}
-        .navbar {{
+        }
+        .navbar {
             background-color: var(--primary-color);
-        }}
-        .hero-section {{
+        }
+        .hero-section {
             background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             color: white;
             padding: 80px 0;
             text-align: center;
-        }}
-        .card-service {{
+        }
+        .card-service {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
             border-radius: 10px;
-        }}
-        .card-service:hover {{
+        }
+        .card-service:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }}
-        .footer {{
+        }
+        .footer {
             background-color: var(--primary-color);
             color: white;
             padding: 30px 0;
             margin-top: 50px;
-        }}
+        }
     </style>
 </head>
 <body>
@@ -57,6 +57,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#layanan">Layanan Publik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#transparansi-aduan">Transparansi Aduan</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skm">Survei Kepuasan (SKM)</a></li>
                 </ul>
             </div>
@@ -68,7 +69,7 @@
         <div class="container">
             <h1 class="display-5 fw-bold">SD NEGERI 1 SUMBER</h1>
             <p class="lead">Kabupaten Cirebon - Provinsi Jawa Barat</p>
-            <p class="mb-4">Portal Resmi Standar Pelayanan Publik dan Survei Kepuasan Masyarakat (SKM)</p>
+            <p class="mb-4">Portal Resmi Standar Pelayanan Publik, Transparansi Aduan Fasilitas, dan Survei Kepuasan Masyarakat (SKM)</p>
             <a href="#skm" class="btn btn-warning btn-lg fw-bold text-dark px-4 shadow"><i class="fas fa-star me-2"></i>Isi Survei SKM</a>
         </div>
     </header>
@@ -141,6 +142,60 @@
         </div>
     </section>
 
+    <!-- Transparansi Laporan Pengaduan & Saran Fasilitas Sarpras -->
+    <section id="transparansi-aduan" class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">Transparansi Laporan Pengaduan & Sarpras</h2>
+            <hr class="w-25 mx-auto bg-primary">
+            <p class="text-muted">Daftar riwayat pengaduan fasilitas dan sarana prasarana serta status tindak lanjut penanganannya</p>
+        </div>
+
+        <div class="card shadow border-0">
+            <div class="card-body p-4">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-primary text-dark">
+                            <tr>
+                                <th>No</th>
+                                <th>Tanggal Pengaduan</th>
+                                <th>Kategori / Isi Aduan & Saran</th>
+                                <th>Status</th>
+                                <th>Tanggal Selesai</th>
+                                <th>Keterangan Penanganan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>01 Agustus 2025</td>
+                                <td><strong>Fasilitas & Sarpras:</strong> Plafon kelas 5A rusak, dapat membahayakan siswa yang belajar takut sewaktu-waktu jatuh.</td>
+                                <td><span class="badge bg-success">Selesai</span></td>
+                                <td>September 2025</td>
+                                <td>Telah diproses dan diperbaiki total demi keamanan kegiatan belajar mengajar.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>September 2025</td>
+                                <td><strong>Saran Fasilitas:</strong> Minta pagar di depan kelas 5A dan 4B diperbaiki, dibuat sama seperti pagar depan kelas 6.</td>
+                                <td><span class="badge bg-success">Selesai</span></td>
+                                <td>September 2025 (Jeda waktu ± 1 minggu)</td>
+                                <td>Tindak lanjut perbaikan pagar selesai dikerjakan sesuai standar kelas 6.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>30 Juni 2026</td>
+                                <td><strong>Fasilitas & Sarpras:</strong> Di depan kelas 1 keramiknya pecah rusak bisa membahayakan anak kelas 1.</td>
+                                <td><span class="badge bg-success">Selesai</span></td>
+                                <td>13 Juli 2026</td>
+                                <td>Sudah ditangani dan diproses pergantian keramik baru, area kembali aman.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Form Survei Kepuasan Masyarakat (SKM) -->
     <section id="skm" class="bg-light py-5">
         <div class="container">
@@ -171,7 +226,6 @@
                                 <h5 class="fw-bold text-secondary mb-3">Penilaian 9 Unsur SKM (Skor 1 - 4)</h5>
                                 <p class="small text-muted">Keterangan: (1) Tidak Baik, (2) Kurang Baik, (3) Baik, (4) Sangat Baik</p>
 
-                                <!-- Looping 9 Unsur Sederhana -->
                                 <div class="mb-3">
                                     <label class="form-label">1. Persyaratan Pelayanan</label>
                                     <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
