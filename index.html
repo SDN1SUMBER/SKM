@@ -36,6 +36,15 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+        .report-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #ffffff;
+            transition: all 0.2s ease-in-out;
+        }
+        .report-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
         .footer {
             background-color: var(--primary-color);
             color: white;
@@ -57,7 +66,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#layanan">Layanan Publik</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pengaduan">Laporan Pengaduan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pengaduan">Laporan Masuk</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skm">Survei Kepuasan (SKM)</a></li>
                 </ul>
             </div>
@@ -142,51 +151,63 @@
         </div>
     </section>
 
-    <!-- Bagian Laporan Pengaduan Fasilitas & Sarana -->
+    <!-- Bagian Laporan Masuk Terakhir (Anonim) -->
     <section id="pengaduan" class="container my-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-primary">Laporan Pengaduan Fasilitas & Sarana</h2>
-            <hr class="w-25 mx-auto bg-primary">
-            <p class="text-muted">Transparansi penanganan dan perbaikan sarana prasarana sekolah</p>
-        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow border-0 p-4 rounded-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="fw-bold text-primary mb-0">
+                                <i class="fas fa-list-alt me-2"></i>Laporan Masuk Terakhir (Anonim)
+                            </h4>
+                            <span class="badge bg-primary px-3 py-2 rounded-pill">3 Laporan</span>
+                        </div>
+                        <p class="text-muted small mb-4">Berikut adalah daftar aspirasi masyarakat yang telah masuk. Nama dan identitas pelapor <strong>selalu disamarkan/di-anonimkan</strong> demi menjaga kerahasiaan.</p>
 
-        <div class="card shadow border-0">
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover align-middle">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>No</th>
-                                <th>Tanggal Aduan</th>
-                                <th>Isi Aduan / Saran</th>
-                                <th>Tanggal Selesai</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>01 Agustus 2025</td>
-                                <td>Plafon kelas 5A Rusak, dapat membahayakan siswa yang belajar takut sewaktu waktu jatuh.</td>
-                                <td>September 2025</td>
-                                <td><span class="badge bg-success">Selesai</span></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>September 2025</td>
-                                <td>Minta pagar didepan kelas 5A dan 4B diperbaiki, dibuat sama seperti pagar depan kelas 6.</td>
-                                <td>September 2025 (Jeda waktu seminggu)</td>
-                                <td><span class="badge bg-success">Selesai</span></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>30 Juni 2026</td>
-                                <td>Keramik didepan kelas 1 pecah rusak bisa membahayakan anak kelas 1.</td>
-                                <td>13 Juli 2026</td>
-                                <td><span class="badge bg-success">Selesai</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <!-- Laporan 1 -->
+                        <div class="report-card p-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info text-dark fw-semibold">Fasilitas & Sarana Sekolah</span>
+                                <small class="text-muted">30 Juni 2026</small>
+                            </div>
+                            <p class="mb-1 small text-secondary"><strong>Pelapor:</strong> Anonim (Orang Tua / Wali Murid)</p>
+                            <p class="mb-2 fst-italic">"Keramik didepan kelas 1 pecah rusak bisa membahayakan anak kelas 1."</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                                <span class="text-success small fw-bold"><i class="fas fa-check-circle me-1"></i> Status: Selesai (13 Juli 2026)</span>
+                                <small class="text-muted">ID: #LAPOR-003</small>
+                            </div>
+                        </div>
+
+                        <!-- Laporan 2 -->
+                        <div class="report-card p-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info text-dark fw-semibold">Fasilitas & Sarana Sekolah (Saran)</span>
+                                <small class="text-muted">September 2025</small>
+                            </div>
+                            <p class="mb-1 small text-secondary"><strong>Pelapor:</strong> Anonim (Wali Murid)</p>
+                            <p class="mb-2 fst-italic">"Minta pagar didepan kelas 5A dan 4B diperbaiki, dibuat sama seperti pagar depan kelas 6."</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                                <span class="text-success small fw-bold"><i class="fas fa-check-circle me-1"></i> Status: Selesai (Jeda waktu seminggu)</span>
+                                <small class="text-muted">ID: #LAPOR-002</small>
+                            </div>
+                        </div>
+
+                        <!-- Laporan 3 -->
+                        <div class="report-card p-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info text-dark fw-semibold">Fasilitas & Sarana Sekolah</span>
+                                <small class="text-muted">01 Agustus 2025</small>
+                            </div>
+                            <p class="mb-1 small text-secondary"><strong>Pelapor:</strong> Anonim (Orang Tua / Wali Murid)</p>
+                            <p class="mb-2 fst-italic">"Plafon kelas 5A Rusak, dapat membahayakan siswa yang belajar takut sewaktu waktu jatuh."</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+                                <span class="text-success small fw-bold"><i class="fas fa-check-circle me-1"></i> Status: Selesai (September 2025)</span>
+                                <small class="text-muted">ID: #LAPOR-001</small>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
