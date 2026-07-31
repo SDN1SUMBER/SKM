@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Layanan & SKM - SD Negeri 1 Sumber</title>
+    <!-- Menggunakan Bootstrap 5 untuk tampilan modern dan responsif -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {{
+            --primary-color: #003366;
+            --secondary-color: #4682B4;
+        }}
+        body {{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+        }}
+        .navbar {{
+            background-color: var(--primary-color);
+        }}
+        .hero-section {{
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }}
+        .card-service {{
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 10px;
+        }}
+        .card-service:hover {{
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }}
+        .footer {{
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fas fa-school me-2"></i>SDN 1 SUMBER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan Publik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skm">Survei Kepuasan (SKM)</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="hero-section">
+        <div class="container">
+            <h1 class="display-5 fw-bold">SD NEGERI 1 SUMBER</h1>
+            <p class="lead">Kabupaten Cirebon - Provinsi Jawa Barat</p>
+            <p class="mb-4">Portal Resmi Standar Pelayanan Publik dan Survei Kepuasan Masyarakat (SKM)</p>
+            <a href="#skm" class="btn btn-warning btn-lg fw-bold text-dark px-4 shadow"><i class="fas fa-star me-2"></i>Isi Survei SKM</a>
+        </div>
+    </header>
+
+    <!-- Daftar Layanan Publik -->
+    <section id="layanan" class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">Standar Jenis Pelayanan Publik</h2>
+            <hr class="w-25 mx-auto bg-primary">
+            <p class="text-muted">Berikut adalah 4 jenis layanan utama yang diselenggarakan oleh SD Negeri 1 Sumber</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Layanan 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="text-primary fs-1 mb-3"><i class="fas fa-stamp"></i></div>
+                        <h5 class="card-title fw-bold">1. Legalisir Dokumen</h5>
+                        <p class="card-text small text-muted">Pengesahan fotokopi raport dan ijazah.</p>
+                        <ul class="list-unstyled small text-secondary">
+                            <li><i class="fas fa-clock text-warning me-1"></i> 10-15 Menit</li>
+                            <li><i class="fas fa-tag text-success me-1"></i> Gratis (Rp 0)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Layanan 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="text-primary fs-1 mb-3"><i class="fas fa-headset"></i></div>
+                        <h5 class="card-title fw-bold">2. Konsultasi & Pengaduan</h5>
+                        <p class="card-text small text-muted">Pusat layanan informasi dan aduan wali murid.</p>
+                        <ul class="list-unstyled small text-secondary">
+                            <li><i class="fas fa-clock text-warning me-1"></i> 15-30 Menit</li>
+                            <li><i class="fas fa-tag text-success me-1"></i> Gratis (Rp 0)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Layanan 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="text-primary fs-1 mb-3"><i class="fas fa-user-plus"></i></div>
+                        <h5 class="card-title fw-bold">3. Penerimaan Siswa Baru</h5>
+                        <p class="card-text small text-muted">Pendaftaran peserta didik baru (PPDB).</p>
+                        <ul class="list-unstyled small text-secondary">
+                            <li><i class="fas fa-clock text-warning me-1"></i> Sesuai Jadwal</li>
+                            <li><i class="fas fa-tag text-success me-1"></i> Tanpa Pungutan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Layanan 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-service h-100 p-3 shadow-sm">
+                    <div class="card-body">
+                        <div class="text-primary fs-1 mb-3"><i class="fas fa-exchange-alt"></i></div>
+                        <h5 class="card-title fw-bold">4. Mutasi Siswa</h5>
+                        <p class="card-text small text-muted">Pelayanan mutasi masuk dan keluar siswa.</p>
+                        <ul class="list-unstyled small text-secondary">
+                            <li><i class="fas fa-clock text-warning me-1"></i> 15-30 Menit</li>
+                            <li><i class="fas fa-tag text-success me-1"></i> Gratis (Rp 0)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Survei Kepuasan Masyarakat (SKM) -->
+    <section id="skm" class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow border-0 p-4">
+                        <div class="card-body">
+                            <h3 class="text-center fw-bold text-primary mb-3">Formulir Survei Kepuasan Masyarakat (SKM)</h3>
+                            <p class="text-center text-muted small mb-4">Berikan penilaian Anda berdasarkan 9 unsur pelayanan publik untuk membantu meningkatkan mutu layanan SD Negeri 1 Sumber.</p>
+                            
+                            <form id="skmForm" onsubmit="event.preventDefault(); alert('Terima kasih! Penilaian SKM Anda telah berhasil dikirim.');">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Nama Responden / Wali Murid</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan nama lengkap" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Jenis Layanan yang Dinilai</label>
+                                    <select class="form-select" required>
+                                        <option value="">-- Pilih Jenis Layanan --</option>
+                                        <option value="legalisir">Legalisir Dokumen Raport/Ijazah</option>
+                                        <option value="konsultasi">Konsultasi dan Pengaduan</option>
+                                        <option value="ppdb">Penerimaan Siswa Baru (PPDB)</option>
+                                        <option value="mutasi">Mutasi Siswa</option>
+                                    </select>
+                                </div>
+
+                                <hr class="my-4">
+                                <h5 class="fw-bold text-secondary mb-3">Penilaian 9 Unsur SKM (Skor 1 - 4)</h5>
+                                <p class="small text-muted">Keterangan: (1) Tidak Baik, (2) Kurang Baik, (3) Baik, (4) Sangat Baik</p>
+
+                                <!-- Looping 9 Unsur Sederhana -->
+                                <div class="mb-3">
+                                    <label class="form-label">1. Persyaratan Pelayanan</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">2. Sistem, Mekanisme, dan Prosedur</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">3. Waktu Penyelesaian</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">4. Biaya / Tarif (Bebas Pungli)</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">5. Produk Spesifikasi Jenis Pelayanan</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">6. Kompetensi Pelaksana / Petugas</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">7. Perilaku Pelaksana / Keramahan</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">8. Maklumat Pelayanan</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">9. Penanganan Pengaduan, Saran & Masukan</label>
+                                    <select class="form-select" required><option value="4">4 - Sangat Baik</option><option value="3">3 - Baik</option><option value="2">2 - Kurang Baik</option><option value="1">1 - Tidak Baik</option></select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Kritik, Saran, atau Masukan Tambahan</label>
+                                    <textarea class="form-control" rows="3" placeholder="Tuliskan saran membangun untuk sekolah..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold shadow-sm">Kirim Penilaian SKM</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-1 fw-bold">SD Negeri 1 Sumber Kabupaten Cirebon</p>
+            <p class="small text-white-50 mb-0">&copy; 2026 Layanan Publik & Survei Kepuasan Masyarakat (SKM). Hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
